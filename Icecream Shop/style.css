@@ -1,0 +1,262 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url(./imgs/body.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.home{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./imgs/background3.jfif);
+}
+.home h1{
+    font-size: 60px;
+    font-family: 'Great Vibes',sans-serif;
+    font-weight: 100;
+    color: #fff;
+    text-align: left;
+    margin-top: 5px;
+    padding:50px;
+    letter-spacing: 3px;
+}
+
+.social-container{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.social-icons{
+    list-style: none;
+}
+.social-icons li{
+    margin: 0 15px;
+    display: inline;
+}
+.social-icons li i{
+    color: #fff;
+    font-size: 18px;
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 50px ;
+}
+.description{
+    height: 100%;
+    text-align: left;
+    padding: 50px 0;
+}
+.description h1{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Raleway',sans-serif;
+    padding-bottom: 20px;
+}
+span{
+    font-size: 50px;
+    font-family: 'Great Vibes',sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+.description p{
+    font-size: 16px;
+    font-family: 'cursive' , times, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
+    
+}
+.image{
+    width: auto;
+    height: 50vh;
+    background-position: center;
+    background-size:cover;
+    background-image: url(./imgs/about.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px;
+    margin-top: 1px;
+}
+.title{
+    padding: 0 50px;
+    font-size: 35px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+}
+.products{
+    padding: 100px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    grid-gap: 1em;
+}
+.box{
+    background-position: center;
+    background-size: cover;
+    background-image: url(./imgs/product1.jpg);
+    position: relative;
+}
+.box:nth-child(2){
+    background-image: url(./imgs/product2.jpg);
+}
+.box:nth-child(3){
+    background-image: url(./imgs/product3.jpg);
+}
+.box:nth-child(4){
+    background-image: url(./imgs/product4.jpg);
+}
+.box h2{
+    font-size: 25px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #b8874a;
+    padding: 15px;
+    border-bottom-left-radius: 50px;
+}
+.gallery{
+    padding: 100px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 230px;
+    grid-gap: 1em;
+}
+.img{
+    background-position: center;
+    background-size: cover;
+    background-image: url(./imgs/img1.jpg);
+}
+.img:nth-child(2){
+    background-image: url(./imgs/img2.jpg);
+}
+.img:nth-child(3){
+    background-image: url(./imgs/img3.jpg);
+}
+.img:nth-child(4){
+    background-image: url(./imgs/img4.jpg);
+}
+.img:nth-child(5){
+    background-image: url(./imgs/img5.jpg);
+}
+.img:nth-child(6){
+    background-image: url(./imgs/img6.jpg);
+}
+.reviews{
+    padding: 100px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-gap: 2em;
+}
+.review{
+    border-radius: 20px;
+    background: lightgreen;
+    color: black;
+    box-shadow: 1px 0px 36px -18px rgba(0,0,0,0.8);
+    text-align: justify;
+    padding: 30px;
+}
+.review h1{
+    font-size: 25px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.review p{
+    font-size: 16px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+footer{
+    padding: 50px;
+    background: #131313;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+.contact h3, .contact p{
+    font-size: 18px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 500;
+    text-align: right;
+    line-height: 27px;
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+    .home {
+       height: 100vh;
+     }
+    .products {
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+    .reviews {
+       grid-template-columns: 1fr 1fr 1fr;
+     }
+    .about {
+       grid-template-columns: 1fr 1fr;
+     }
+   }
+   
+   /* Medium screens (laptops) */
+   @media (min-width: 992px) and (max-width: 1199px) {
+    .home {
+       height: 80vh;
+     }
+    .products {
+       grid-template-columns: 1fr 1fr 1fr;
+     }
+    .reviews {
+       grid-template-columns: 1fr 1fr;
+     }
+    .about {
+       grid-template-columns: 1fr;
+     }
+   }
+   
+   /* Small screens (tablets) */
+   @media (min-width: 768px) and (max-width: 991px) {
+    .home {
+       height: 60vh;
+     }
+    .products {
+       grid-template-columns: 1fr 1fr;
+     }
+    .reviews {
+       grid-template-columns: 1fr;
+     }
+    .about {
+       grid-template-columns: 1fr;
+     }
+   }
+   
+   /* Extra small screens (mobiles) */
+   @media (max-width: 767px) {
+    .home {
+       height: 40vh;
+     }
+    .products {
+       grid-template-columns: 1fr;
+     }
+    .reviews {
+       grid-template-columns: 1fr;
+     }
+    .about {
+       grid-template-columns: 1fr;
+     }
+   }
